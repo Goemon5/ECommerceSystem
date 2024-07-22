@@ -1,23 +1,25 @@
-
 package ecommerce;
+
 import java.util.ArrayList;
 
 public class Cart {
-    private int cartID;
-    private ArrayList<Commodity> commodities;
+    private ArrayList<Product> products;
 
-    public Cart(int cartID) {
-        this.cartID = cartID;
-        this.commodities = new ArrayList<>();
+    public Cart() {
+        this.products = new ArrayList<>();
     }
 
-    public void addCommodity(Commodity commodity) {
-        this.commodities.add(commodity);
+    public void addProduct(Product product) {
+        this.products.add(product);
     }
 
-    public void removeCommodity(Commodity commodity) {
-        this.commodities.remove(commodity);
+    public void removeProduct(Product product) {
+        this.products.remove(product);
     }
 
-    // すべての属性のゲッターとセッター
+    public ArrayList<Product> getProducts() {
+        return products;
+    }
+
+    // Other cart related methods
 }

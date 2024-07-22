@@ -1,0 +1,12 @@
+package ecommerce;
+
+public enum CustomerState {
+    AUTHENTICATING,
+    BROWSING,
+    ADDING_TO_CART,
+    REVIEWING_CART,
+    PROCEEDING_TO_CHECKOUT,
+    ENTERING_ADDRESS,
+    ENTERING_PAYMENT_METHOD,
+    CONFIRMING_ORDER
+}
